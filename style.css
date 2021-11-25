@@ -4,20 +4,14 @@
   box-sizing: border-box;
 }
 body {
-  /* background: #ece9e6; */
-  /* background: -webkit-linear-gradient(to right, #ffffff, #ece9e6);
-  background: linear-gradient(to right, #ffffff, #ece9e6); */
   font-family: 'Poppins', sans-serif;
   background-color: #22254b;
-  /* display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh; */
   margin: 0;
 }
 main {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 }
 header {
   background-color: #373b69;
