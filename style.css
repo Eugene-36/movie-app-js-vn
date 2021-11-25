@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+body {
+  /* background: #ece9e6; */
+  /* background: -webkit-linear-gradient(to right, #ffffff, #ece9e6);
+  background: linear-gradient(to right, #ffffff, #ece9e6); */
+  font-family: 'Poppins', sans-serif;
+  background-color: #22254b;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh; */
+  margin: 0;
+}
+main {
+  display: flex;
+  flex-wrap: wrap;
+}
+header {
+  background-color: #373b69;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.5rem;
+}
+.search {
+  background-color: transparent;
+  border: 2px solid #22254b;
+  border-radius: 50px;
+  color: #fff;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+.search::placeholder {
+  color: #7378c5;
+}
+.search:focus {
+  background-color: #22254b;
+  outline: none;
+}
+.movie {
+  border-radius: 3px;
+  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  position: relative;
+  background-color: #373b69;
+  margin: 1rem;
+  width: 300px;
+}
+
+.movie img {
+  display: block;
+  width: 100%;
+  height: 398px;
+  border-radius: 5px;
+}
+
+.movie-info {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5rem;
+
+  letter-spacing: 1px;
+}
+
+.movie-info h3 {
+  margin: 0;
+}
+.movie-info span {
+  background-color: #22254b;
+  padding: 0.25rem;
+  border-radius: 3px;
+  font-weight: bold;
+  padding: 0.25rem 0.5rem;
+}
+
+.movie-info span.green {
+  color: lightgreen;
+}
+.movie-info span.orange {
+  color: orange;
+}
+.movie-info span.red {
+  color: red;
+}
+.overview {
+  background-color: white;
+  padding: 2rem;
+  position: absolute;
+  max-height: 100%;
+  overflow: auto;
+  scrollbar-color: #458245 #714826; /* «цвет ползунка» «цвет полосы скроллбара» */
+  scrollbar-width: thin; /* толщина */
+  /* top: 0; */
+  bottom: 0;
+  right: 0;
+  left: 0;
+  transform: translateY(101%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.movie:hover .overview {
+  transform: translateY(0);
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+  background-color: #143861;
+}
+::-webkit-scrollbar-thumb {
+  /* width: 0.2rem; */
+  background: #413e3e;
+  border-radius: 0.5rem;
+  box-shadow: inset 1px 1px 10px #f3faf7;
+}
